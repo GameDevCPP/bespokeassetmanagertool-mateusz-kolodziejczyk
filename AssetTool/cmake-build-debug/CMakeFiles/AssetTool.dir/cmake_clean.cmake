@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "AssetTool.exe"
   "AssetTool.exe.manifest"
-  "AssetTool.lib"
   "AssetTool.pdb"
   "CMakeFiles/AssetTool.dir/main.cpp.obj"
+  "libAssetTool.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

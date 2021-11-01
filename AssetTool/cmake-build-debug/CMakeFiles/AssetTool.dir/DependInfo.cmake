@@ -10,10 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/main.cpp" "C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-debug/CMakeFiles/AssetTool.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "D:/SFML/include"
   )
 
 # The set of dependency files which are needed:

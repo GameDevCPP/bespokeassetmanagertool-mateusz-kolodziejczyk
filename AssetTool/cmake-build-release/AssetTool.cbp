@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AssetTool"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\SFML\;CMake Files\SFML\lib\;CMake Files\SFML\lib\cmake\;CMake Files\SFML\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AssetTool">
+				<Option output="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/AssetTool.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/SFML/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 AssetTool"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AssetTool/fast">
+				<Option output="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/AssetTool.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/SFML/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 AssetTool/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/main.cpp">
+			<Option target="AssetTool"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/SFML/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\SFML\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\AssetTool.dir/objects.a
+D:\mingw64\bin\ar.exe cr CMakeFiles\AssetTool.dir/objects.a @CMakeFiles\AssetTool.dir\objects1.rsp
+D:\mingw64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\AssetTool.dir/objects.a -Wl,--no-whole-archive -o AssetTool.exe -Wl,--out-implib,libAssetTool.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AssetTool.dir\linklibs.rsp

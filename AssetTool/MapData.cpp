@@ -1,6 +1,6 @@
 #include "MapData.h"
 
-namespace TileMapping {
+namespace assettool {
     const int* MapData::get_level() {
         //since vector must store data contiguously, the following works for array
         int* a = &map[0];

@@ -2,7 +2,7 @@
 #include "nlohmann/json.hpp"
 #include "SFML/Graphics.hpp"
 #include <string>
-namespace TileMapping {
+namespace assettool {
     struct MapData {
         std::vector<int> map;
         int tileSize[2], mapSize[2];

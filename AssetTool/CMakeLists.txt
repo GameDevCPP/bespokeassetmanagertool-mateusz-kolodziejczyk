@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(AssetTool)
-
+set(SOURCE_FILES main.cpp MapData.cpp TileMap.cpp)
 set(CMAKE_CXX_STANDARD 14)
 #set(SFML_DIR "D:/SFML/lib/cmake/SFML")
 set(TGUI_DIR "/home/mk/Documents/TGUI-0.9.1/build")
@@ -20,7 +20,7 @@ if(NOT json_POPULATED)
     add_subdirectory(${json_SOURCE_DIR} ${json_BINARY_DIR} EXCLUDE_FROM_ALL)
 endif()
 
-add_executable(AssetTool main.cpp )
+add_executable(AssetTool ${SOURCE_FILES} )
 target_link_libraries(AssetTool PRIVATE
         sfml-system sfml-window sfml-graphics sfml-network sfml-audio
         tgui

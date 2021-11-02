@@ -1,6 +1,0 @@
-/home/mk/IDE/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool
--- Found SFML 2.5.1 in /usr/lib64/cmake/SFML
--- Found TGUI 0.9.1 in /home/mk/Documents/TGUI-0.9.1/build
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug

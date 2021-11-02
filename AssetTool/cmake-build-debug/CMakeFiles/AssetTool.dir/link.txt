@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/AssetTool.dir/main.cpp.o -o AssetTool  -Wl,-rpath,/home/mk/Documents/TGUI-0.9.1/build/lib /usr/lib64/libsfml-network.so.2.5.1 /usr/lib64/libsfml-audio.so.2.5.1 /home/mk/Documents/TGUI-0.9.1/build/lib/libtgui.so.0.9.1 /usr/lib64/libsfml-graphics.so.2.5.1 /usr/lib64/libsfml-window.so.2.5.1 /usr/lib64/libsfml-system.so.2.5.1 

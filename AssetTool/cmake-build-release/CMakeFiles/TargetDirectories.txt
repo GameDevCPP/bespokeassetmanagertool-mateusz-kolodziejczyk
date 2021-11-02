@@ -1,3 +1,0 @@
-C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/CMakeFiles/rebuild_cache.dir
-C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/CMakeFiles/AssetTool.dir
-C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-release/CMakeFiles/edit_cache.dir

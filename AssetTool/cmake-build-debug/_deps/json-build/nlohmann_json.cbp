@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="nlohmann_json"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\;CMake Files\..\..\..\TGUI-0.9.1\;CMake Files\..\..\..\TGUI-0.9.1\build\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\json-src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../../../../usr/lib64/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../../../../usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../../../../usr/lib64/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../../../../usr/lib64/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../../../../usr/lib64/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../TGUI-0.9.1/build/TGUIConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\TGUI-0.9.1\build\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../TGUI-0.9.1/build/TGUIConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\TGUI-0.9.1\build\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../TGUI-0.9.1/build/TGUISharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\TGUI-0.9.1\build\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

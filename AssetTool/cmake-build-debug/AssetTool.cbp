@@ -5,7 +5,7 @@
 		<Option title="AssetTool"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\;CMake Files\..\..\..\TGUI-0.9.1\;CMake Files\..\..\..\TGUI-0.9.1\build\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\..\..\usr\lib64\cmake\SFML\;CMake Files\..\..\..\TGUI-0.9.1\;CMake Files\..\..\..\TGUI-0.9.1\build\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\json-src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug"/>
@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DTGUI_DYNAMIC"/>
+					<Add directory="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-src/include"/>
 					<Add directory="/home/mk/Documents/TGUI-0.9.1/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
@@ -68,6 +69,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DTGUI_DYNAMIC"/>
+					<Add directory="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-src/include"/>
 					<Add directory="/home/mk/Documents/TGUI-0.9.1/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
@@ -113,6 +115,9 @@
 		</Unit>
 		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/../../../TGUI-0.9.1/build/TGUISharedTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\TGUI-0.9.1\build\"/>
+		</Unit>
+		<Unit filename="/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

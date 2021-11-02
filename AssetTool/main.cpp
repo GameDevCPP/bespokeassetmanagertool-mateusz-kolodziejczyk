@@ -1,5 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <TGUI/TGUI.hpp>
+#include <nlohmann/json.hpp>
+
+// for convenience
+using json = nlohmann::json;
 
 int main()
 {

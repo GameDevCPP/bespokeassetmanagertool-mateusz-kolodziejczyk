@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DTGUI_DYNAMIC
 
-CXX_INCLUDES = -isystem /home/mk/Documents/TGUI-0.9.1/include
+CXX_INCLUDES = -I/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/_deps/json-src/include -isystem /home/mk/Documents/TGUI-0.9.1/include
 
 CXX_FLAGS = -g -std=gnu++14
 

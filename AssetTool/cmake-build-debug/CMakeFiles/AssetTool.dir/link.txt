@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\AssetTool.dir/objects.a
-D:\mingw64\bin\ar.exe cr CMakeFiles\AssetTool.dir/objects.a @CMakeFiles\AssetTool.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\AssetTool.dir/objects.a -Wl,--no-whole-archive -o AssetTool.exe -Wl,--out-implib,libAssetTool.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AssetTool.dir\linklibs.rsp
+/usr/bin/c++ -g CMakeFiles/AssetTool.dir/main.cpp.o -o AssetTool  -Wl,-rpath,/home/mk/Documents/TGUI-0.9.1/build/lib /usr/lib64/libsfml-network.so.2.5.1 /usr/lib64/libsfml-audio.so.2.5.1 /home/mk/Documents/TGUI-0.9.1/build/lib/libtgui.so.0.9.1 /usr/lib64/libsfml-graphics.so.2.5.1 /usr/lib64/libsfml-window.so.2.5.1 /usr/lib64/libsfml-system.so.2.5.1 

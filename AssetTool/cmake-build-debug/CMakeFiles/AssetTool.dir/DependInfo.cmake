@@ -8,13 +8,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/main.cpp" "C:/Users/tommy/Documents/Mateusz/CPPGameDev/bespokeassetmanagertool-mateusz-kolodziejczyk/AssetTool/cmake-build-debug/CMakeFiles/AssetTool.dir/main.cpp.obj"
+  "/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/main.cpp" "/home/mk/Documents/ClionProjects/BespokeAssetTool/AssetTool/cmake-build-debug/CMakeFiles/AssetTool.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "TGUI_DYNAMIC"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "D:/SFML/include"
+  "/home/mk/Documents/TGUI-0.9.1/include"
   )
 
 # The set of dependency files which are needed:

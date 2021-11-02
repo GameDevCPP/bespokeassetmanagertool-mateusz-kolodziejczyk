@@ -4,14 +4,14 @@
 
 #include "TileEditor.h"
 
-void assettool::drawUI(){
+void asset_tool::draw_ui(){
 
 }
 
-void assettool::drawGrid() {
+void asset_tool::draw_grid() {
 
 }
 
-void assettool::drawTiles() {
-    
+void asset_tool::draw_tiles() {
+
 }

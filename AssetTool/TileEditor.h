@@ -4,10 +4,10 @@
 
 #ifndef ASSETTOOL_TILEEDITOR_H
 #define ASSETTOOL_TILEEDITOR_H
-namespace assettool {
-    void drawUI();
-    void drawTiles();
-    void drawGrid();
+namespace asset_tool {
+    void draw_ui();
+    void draw_tiles();
+    void draw_grid();
 }
 
 

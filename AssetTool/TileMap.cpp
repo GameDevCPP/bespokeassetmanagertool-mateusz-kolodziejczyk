@@ -1,6 +1,6 @@
 #include "TileMap.hpp"
-namespace assettool{
-    bool TileMap::load(assettool::MapData map)
+namespace asset_tool{
+    bool TileMap::load(asset_tool::MapData map)
     {
         return this->load(map.textureForMap, sf::Vector2u(map.tileSize[0], map.tileSize[1]), map.get_level(), map.mapSize[0], map.mapSize[1]);
     }

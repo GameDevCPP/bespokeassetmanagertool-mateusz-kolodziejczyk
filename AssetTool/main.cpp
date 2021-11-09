@@ -2,6 +2,7 @@
 #include "TileMap.hpp"
 #include "Display.h"
 #include "MapData.h"
+#include "FileIO.h"
 #include <TGUI/TGUI.hpp>
 #include <nlohmann/json.hpp>
 #include <fstream>
@@ -12,11 +13,8 @@ using json = nlohmann::json;
 
 int main()
 {
-    using nlohmann::json;
-    std::ofstream outJson("map.json");
-
     // create the window
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Tilemap");
+    sf::RenderWindow window(sf::VideoMode(768, 256), "Tilemap");
     window.setVerticalSyncEnabled(true);
 
     sf::Vector2u widthAndHeight(16, 8), tileSize(32, 32);
@@ -36,31 +34,26 @@ int main()
             {"mapsize",{widthAndHeight.x,widthAndHeight.y}},
             {"maptexture","tileset.png"}
     };
-    outJson << jsonMap << std::endl;
+    asset_tool::saveToJSON("map_data", jsonMap);
+    std::pair<json, bool> result = asset_tool::loadFromJSON("map_data");
+    // Only save result if loading from file was successful
+    if(result.second){
+        jsonMap = result.first;
+    }
+    else{
+        std::cout << "Failed to loadData in file" << std::endl;
+    }
 
-
-    asset_tool::MapData mapData;
-
-
-    //write json object:
-    outJson << jsonMap << std::endl;
-
-
-    auto p2 = jsonMap.get<asset_tool::MapData>();
-    std::cout << std::endl << " p2 =";
-    for (auto i : p2.map)
-        std::cout << i << ' ';
-    std::cout << ", mapsize = [" << p2.mapSize[0] << "," << p2.mapSize[1] << "]" << std::endl;
+    auto mapData = std::make_shared<asset_tool::MapData>(jsonMap.get<asset_tool::MapData>());
     // create the tilemap from the level definition
-    asset_tool::TileMap map;
+    asset_tool::TileMap map(mapData);
     //read in our data-driven-game -- well just a map - but it's a start!
 
     // Load in the map data
-    if (!map.load(p2)) {
+    if (!map.loadTileSet()) {
         return EXIT_FAILURE;
     }
 
-    map.setScale(0.5,0.5);
     // run the main loop
     while (window.isOpen())
     {

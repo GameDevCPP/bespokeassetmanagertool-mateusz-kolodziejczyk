@@ -32,7 +32,7 @@ int main()
     sf::Vector2u widthAndHeight(16, 8), tileSize(32, 32);
 
 
-    //output map as json object
+    // Dummy tile data
     json jsonMap = {
             {"map",
                           {0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -47,20 +47,19 @@ int main()
             {"mapsize",{widthAndHeight.x,widthAndHeight.y}},
             {"maptexture","tileset.png"}
     };
-    asset_tool::saveToJSON("map_data", jsonMap);
+
+    // Load in json file, if it doesn't exist then create one with dummy data.
     std::pair<json, bool> result = asset_tool::loadFromJSON("map_data");
-    // Only save result if loading from file was successful
     if(result.second){
         jsonMap = result.first;
     }
     else{
-        std::cout << "Failed to loadData in file" << std::endl;
+        asset_tool::saveToJSON("map_data", jsonMap);
     }
-
     auto mapData = std::make_shared<asset_tool::MapData>(jsonMap.get<asset_tool::MapData>());
+
     // create the tilemap from the level definition
     asset_tool::TileMap map(mapData);
-    //read in our data-driven-game -- well just a map - but it's a start!
 
     // Load in tilesheet then tile set
     if(!map.loadTilesheet()){
@@ -93,6 +92,7 @@ int main()
         std::cout << "Clicked" << std::endl;
     });
     gui.add(button);
+
     // run the main loop
     while (window.isOpen())
     {

@@ -64,11 +64,10 @@ int main()
     asset_tool::TilesDisplay tilesDisplay;
 
     tilesDisplay.loadTiles(*mapData, 4);
-    int xScale = 2;
-    int yScale = 2;
-    float newPositionX = (float)(window.getSize().x-tileSize.x*xScale);
-    tilesDisplay.setPosition(newPositionX,0);
-    tilesDisplay.setScale(2,2);
+    int tileDisplayScaleFactor = 2;
+    float tileDisplayX = (float)(window.getSize().x - tileSize.x * tileDisplayScaleFactor);
+    tilesDisplay.setPosition(tileDisplayX, 0);
+    tilesDisplay.setScale(tileDisplayScaleFactor,tileDisplayScaleFactor);
     // run the main loop
     while (window.isOpen())
     {
@@ -79,10 +78,12 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+        // Mouse events
         if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
             auto mousePosition = sf::Mouse::getPosition(window);
             int mouseX = mousePosition.x;
             int mouseY = mousePosition.y;
+
             // Painting tiles
             // Find what position tile in the mapdata array the click was on.
             int x = mouseX / (int)tileSize.x;
@@ -92,7 +93,15 @@ int main()
             if(x >= 0 && x < widthAndHeight.x && y>=0 && y < widthAndHeight.y) {
                 int index = x + (int) widthAndHeight.x * y;
                 std::cout << index << std::endl;
-                mapData->map.at(index) = 3;
+                mapData->map.at(index) = selectedTile;
+            }
+
+            // Choosing tile
+            if((float)mouseX > tileDisplayX){
+                // change selected tile to wherever the mouse was.
+                // Only need to use mouseY as the tile display is always at the edge
+                selectedTile = (int)(mouseY / (tileSize.y*tileDisplayScaleFactor));
+                std::cout << "new selected tile: " << selectedTile << std::endl;
             }
         }
         // Load tile set every frame

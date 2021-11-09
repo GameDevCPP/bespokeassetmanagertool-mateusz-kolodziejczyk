@@ -6,7 +6,7 @@ namespace asset_tool {
     struct MapData {
         std::vector<int> map;
         int tileSize[2], mapSize[2];
-        std::string textureForMap;
+        std::string tilesetFileName;
         const int* get_level();
     };
     void to_json(nlohmann::json& j, const MapData& md);

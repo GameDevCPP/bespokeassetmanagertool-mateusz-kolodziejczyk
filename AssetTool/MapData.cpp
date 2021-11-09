@@ -11,13 +11,13 @@ namespace asset_tool {
             {"map",ms.map},
             {"tilesize",ms.tileSize},
             {"mapsize",ms.mapSize},
-            {"maptexture",ms.textureForMap}
+            {"maptexture",ms.tilesetFileName}
         };
     }
     void from_json(const nlohmann::json& j, MapData& ms) {
         j.at("map").get_to(ms.map);
         j.at("tilesize").get_to(ms.tileSize);
         j.at("mapsize").get_to(ms.mapSize);
-        j.at("maptexture").get_to(ms.textureForMap);
+        j.at("maptexture").get_to(ms.tilesetFileName);
     }
 }

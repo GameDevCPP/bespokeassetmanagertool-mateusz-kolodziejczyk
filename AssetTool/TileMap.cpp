@@ -2,7 +2,7 @@
 namespace asset_tool{
     bool TileMap::load(asset_tool::MapData map)
     {
-        return this->load(map.textureForMap, sf::Vector2u(map.tileSize[0], map.tileSize[1]), map.get_level(), map.mapSize[0], map.mapSize[1]);
+        return this->load(map.tilesetFileName, sf::Vector2u(map.tileSize[0], map.tileSize[1]), map.get_level(), map.mapSize[0], map.mapSize[1]);
     }
     bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize, const int* tiles, unsigned int width, unsigned int height)
     {

@@ -3,6 +3,7 @@
 #include "Display.h"
 #include "MapData.h"
 #include "FileIO.h"
+#include "TilesDisplay.h"
 #include <TGUI/TGUI.hpp>
 #include <nlohmann/json.hpp>
 #include <fstream>
@@ -17,7 +18,9 @@ int main()
     sf::RenderWindow window(sf::VideoMode(768, 256), "Tilemap");
     window.setVerticalSyncEnabled(true);
 
+    int selectedTile = 0;
     sf::Vector2u widthAndHeight(16, 8), tileSize(32, 32);
+
 
     //output map as json object
     json jsonMap = {
@@ -49,11 +52,23 @@ int main()
     asset_tool::TileMap map(mapData);
     //read in our data-driven-game -- well just a map - but it's a start!
 
-    // Load in the map data
+    // Load in tilesheet then tile set
+    if(!map.loadTilesheet()){
+        return EXIT_FAILURE;
+    }
+    // Load in the tileSet data
     if (!map.loadTileSet()) {
         return EXIT_FAILURE;
     }
 
+    asset_tool::TilesDisplay tilesDisplay;
+
+    tilesDisplay.loadTiles(*mapData, 4);
+    int xScale = 2;
+    int yScale = 2;
+    float newPositionX = (float)(window.getSize().x-tileSize.x*xScale);
+    tilesDisplay.setPosition(newPositionX,0);
+    tilesDisplay.setScale(2,2);
     // run the main loop
     while (window.isOpen())
     {
@@ -64,11 +79,30 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+            auto mousePosition = sf::Mouse::getPosition(window);
+            int mouseX = mousePosition.x;
+            int mouseY = mousePosition.y;
+            // Painting tiles
+            // Find what position tile in the mapdata array the click was on.
+            int x = mouseX / (int)tileSize.x;
+            int y = mouseY / (int)tileSize.y;
+            std::cout << "x:" << x << "," << "y:" << y << std::endl;
+            // Make sure the mouse was inside the map area
+            if(x >= 0 && x < widthAndHeight.x && y>=0 && y < widthAndHeight.y) {
+                int index = x + (int) widthAndHeight.x * y;
+                std::cout << index << std::endl;
+                mapData->map.at(index) = 3;
+            }
+        }
+        // Load tile set every frame
+        map.loadTileSet();
         // draw the map
         window.clear();
         window.draw(map);
+        window.draw(tilesDisplay);
         window.display();
+
     }
     return EXIT_SUCCESS;
 

@@ -8,15 +8,25 @@
 #include <nlohmann/json.hpp>
 #include <fstream>
 #include <iostream>
+#include <utility>
 
 // for convenience
 using json = nlohmann::json;
+bool save(std::string fileName, asset_tool::MapData &mapData);
+
+bool save(std::string fileName, asset_tool::MapData &mapData) {
+    json j;
+    j = mapData;
+    asset_tool::saveToJSON(std::move(fileName), j);
+    return true;;
+}
 
 int main()
 {
     // create the window
     sf::RenderWindow window(sf::VideoMode(768, 256), "Tilemap");
     window.setVerticalSyncEnabled(true);
+
 
     int selectedTile = 0;
     sf::Vector2u widthAndHeight(16, 8), tileSize(32, 32);
@@ -68,6 +78,21 @@ int main()
     float tileDisplayX = (float)(window.getSize().x - tileSize.x * tileDisplayScaleFactor);
     tilesDisplay.setPosition(tileDisplayX, 0);
     tilesDisplay.setScale(tileDisplayScaleFactor,tileDisplayScaleFactor);
+
+    // Create the gui
+    tgui::GuiSFML gui{window};
+    // GUI Items
+    auto button = tgui::Button::create();
+    button->setPosition(600, 70);
+    button->setText("Save");
+    button->setSize(100, 30);
+    button->onPress([&]{
+        json j;
+        asset_tool::to_json(j, *mapData);
+        asset_tool::saveToJSON("map_data", j);
+        std::cout << "Clicked" << std::endl;
+    });
+    gui.add(button);
     // run the main loop
     while (window.isOpen())
     {
@@ -75,6 +100,7 @@ int main()
         sf::Event event;
         while (window.pollEvent(event))
         {
+            gui.handleEvent(event);
             if (event.type == sf::Event::Closed)
                 window.close();
         }
@@ -110,6 +136,7 @@ int main()
         window.clear();
         window.draw(map);
         window.draw(tilesDisplay);
+        gui.draw();
         window.display();
 
     }
